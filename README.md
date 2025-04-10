@@ -1,7 +1,7 @@
 <h1 align="center">Hi there! 👋 I'm Andrew Lin</h1>
 
 <p align="center">
-🎓 CS @ UT Austin | AI & Computer Vision Research | Competitive Programming | Open to Internships
+🎓 CS @ UT Austin | AI & Computer Vision Research | Full Stack Developer | Competitive Programming | Open to Internships
 </p>
 
 ---
