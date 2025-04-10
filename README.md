@@ -48,7 +48,7 @@
 ## 📫 Let's Connect!  
 - 📧 **Email**: alin257274@gmail.com  
 - 🌍 **Portfolio (Coming Soon!)**  
-- 💼 **[LinkedIn]([https://www.linkedin.com/](https://www.linkedin.com/in/andrew-lin-466798328/))**  
+- 💼 **[LinkedIn](https://www.linkedin.com/in/andrew-lin-466798328/)** – **LinkedIn**
 
 ---
 
