@@ -20,7 +20,7 @@
 - **[UTD Summer Research Internship Program](https://docs.google.com/presentation/d/1SvF_jI_fieUf8khbQ-3sPhu5if0kxnPZ9Vb_lg_QxB4/edit?usp=sharing) (2024)**
   - Studied active speaker detection in **Dr. Yapeng Tien's Computer Vision Lab**  
   - Optimized training techniques (**VGG16, transfer learning, weight freezing**) to maximize **mAP results**  
-- **UTD CAST STEM Bridge Research Lab (2021)**
+- **UTD CAST STEM Bridge Research Lab (2023)**
   - Researched **hybrid manufacturing & CAD modeling** under Dr. Wei Li  
   - Designed, coded, and simulated **milling paths for medical and automation applications**  
 
