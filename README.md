@@ -34,9 +34,9 @@
   - 🌐 **CS Honor Society**  
 
 ### 🛠 **Notable Projects**
-🔹 **[CS314 Recursion](https://github.com/Fangedan/CS314-Recursion)** – **Recursive problem-solving** in Java, tackling complex algorithmic challenges
-🔹 **[Freetail Hackers Hackathon](https://github.com/Fangedan/CVMC)** – **CVMC** starter code to train ASD Models on datasets that are stored in the AVA Active Speaker format
-🔹 **[Girlfriend's Website](https://github.com/Fangedan/silly)** – **Silly** website I made to ask my girlfriend to be my girlfriend
+🔹 **[CS314 Recursion](https://github.com/Fangedan/CS314-Recursion)** – **Recursive problem-solving** in Java, tackling complex algorithmic challenges  
+🔹 **[Freetail Hackers Hackathon](https://github.com/Fangedan/CVMC)** – **CVMC** starter code to train ASD Models on datasets that are stored in the AVA Active Speaker format  
+🔹 **[Girlfriend's Website](https://github.com/Fangedan/silly)** – **Silly** website I made to ask my girlfriend to be my girlfriend  
 
 ---
 
