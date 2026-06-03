@@ -18,9 +18,10 @@
 ### 🔬 **Research & Internships**
 
 - **UTD Machine Learning Research Internship — Prof. Xinfang Jin (2025)**
-  - Building a **Python preprocessing pipeline** to convert DREAM.3D synthetic microstructure data into training-ready format for a conditional Wasserstein GAN
-  - Pipeline generates 64×64×64 BMP voxel stacks, measures volume fractions and specific surface areas, and writes label files — replacing an existing MATLAB workflow
-  - Successfully ran the full end-to-end ML pipeline: CNN surface area estimator → WGAN-GP training → persistent homology topological validation (PCA across all three electrode phases)
+  - Built a **Python preprocessing pipeline** (`preprocess_dream3d.py`) to convert DREAM.3D PNG exports into 64×64×64 BMP voxel stacks with measured volume fractions, specific surface areas, and label files — replacing an existing MATLAB workflow
+  - Extended the preprocessor with production-ready flags: `--multi` (batch-processes multiple DREAM.3D stacks sequentially), `--tile-xy` (spatially tiles large 500×500×500+ volumes into ~49 structures per z-slab instead of downsampling), `--dry-run`, and `--preview`
+  - Wrote a standalone test suite (`test_preprocess.py`) covering four end-to-end scenarios — resize mode, tile-XY mode, multi-folder mode, and pixel-level phase round-trip — all passing on Windows
+  - Successfully ran the full 6-step ML pipeline: CNN surface area estimator → WGAN-GP training → persistent homology topological validation (PCA across all three electrode phases)
   - Built an [interactive 3D SOC electrode simulation](https://fangedan.github.io/GAN-PH) visualizing the electrochemical process with directional particle flows, deployed via GitHub Pages
   - 🔗 **[GAN-PH Repository](https://github.com/Fangedan/GAN-PH)**
 
@@ -33,15 +34,18 @@
   - Designed, coded, and simulated **milling paths for medical and automation applications**  
 
 ### 💻 **Technical & Leadership Roles**
+
 - **President, Merlin Mavens Mentors (CS Tutoring Club)**
   - Guided underclassmen through CS concepts and debugging challenges  
   - Strengthened **mentorship & leadership** skills through weekly tutoring sessions  
+
 - **Computer Science Clubs @ Allen HS**
   - 🏆 **Competitive Coding** (Swift & Python)  
   - 🔐 **Cybersecurity Club** (Competed in **AFA CyberPatriot Nationals**)  
   - 🌐 **CS Honor Society**  
 
 ### 🛠 **Notable Projects**
+
 🔹 **[GAN-PH — SOC Electrode Microstructure Generation](https://github.com/Fangedan/GAN-PH)** – Conditional Wasserstein GAN pipeline for generating 3D porous electrode microstructures, with persistent homology validation and an [interactive simulation](https://fangedan.github.io/GAN-PH)
 
 🔹 **[CS314 Recursion](https://github.com/Fangedan/CS314-Recursion)** – **Recursive problem-solving** in Java, tackling complex algorithmic challenges  
@@ -64,7 +68,3 @@
 - 📧 **Email**: alin257274@gmail.com  
 - 🌍 **Portfolio (Coming Soon!)**  
 - 💼 **[LinkedIn](https://www.linkedin.com/in/andrew-lin-466798328/)**
-
----
-
-✨ *Always learning, building, and exploring new ideas!* 🚀
