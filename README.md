@@ -19,9 +19,12 @@
 
 - **UTD Machine Learning Research Internship — Prof. Xinfang Jin (2025)**
   - Built a **Python preprocessing pipeline** (`preprocess_dream3d.py`) to convert DREAM.3D PNG exports into 64×64×64 BMP voxel stacks with measured volume fractions, specific surface areas, and label files — replacing an existing MATLAB workflow
-  - Extended the preprocessor with production-ready flags: `--multi` (batch-processes multiple DREAM.3D stacks sequentially), `--tile-xy` (spatially tiles large 500×500×500+ volumes into ~49 structures per z-slab instead of downsampling), `--dry-run`, and `--preview`
+  - Extended the preprocessor with production-ready flags: `--multi` (batch-processes multiple DREAM.3D stacks sequentially), `--tile-xy` (spatially tiles large 500×500×500+ volumes into ~49 structures per z-slab instead of downsampling), `--dry-run`, and `--preview`; switched downsampling to block-center sampling to keep categorical phase labels exact
+  - Diagnosed two bugs causing **pore-phase collapse** in the WGAN-GP (a severed SSA-loss gradient path and a volume-fraction loss computed on softmax instead of argmax), then designed and added a **differentiable connectivity loss** (3D-convolution isolation penalty + face-hinge percolation term) — raising pore-connectivity and active-TPB similarity scores from **FAIL to OK** (0.48→0.90 and 0.59→0.86)
+  - Built **`4_CNNCT`**, a new analysis module measuring phase percolation, active triple-phase-boundary density, tortuosity (`taufactor`), and Yu et al. distribution-similarity S-values, with a 23-test suite
+  - Automated a manual ParaView workflow with **`0_PRV/paraview_slice_export.py`** (`pvpython`), converting DREAM.3D `.vtk` volumes into slice-image stacks — shipped with a ground-truth test harness that caught four silent label-corrupting bugs before handoff
   - Wrote a standalone test suite (`test_preprocess.py`) covering four end-to-end scenarios — resize mode, tile-XY mode, multi-folder mode, and pixel-level phase round-trip — all passing on Windows
-  - Successfully ran the full 6-step ML pipeline: CNN surface area estimator → WGAN-GP training → persistent homology topological validation (PCA across all three electrode phases)
+  - Successfully ran the full ML pipeline: CNN surface-area estimator → connectivity-aware WGAN-GP → persistent-homology topological validation → connectivity/TPB transport validation
   - Built an [interactive 3D SOC electrode simulation](https://fangedan.github.io/GAN-PH) visualizing the electrochemical process with directional particle flows, deployed via GitHub Pages
   - 🔗 **[GAN-PH Repository](https://github.com/Fangedan/GAN-PH)**
 
