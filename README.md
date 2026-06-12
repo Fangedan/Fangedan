@@ -3,6 +3,16 @@
 🎓 CS @ UT Austin | AI & Machine Learning Research | Full Stack Developer | Competitive Programming | Open to Internships
 </p>
 
+<p align="center">
+  <a href="https://fangedan.github.io"><img src="https://img.shields.io/badge/🗺️_PORTFOLIO-fangedan.github.io-FF8E3C?style=for-the-badge&labelColor=113560" alt="Portfolio"></a>
+  <a href="https://www.linkedin.com/in/andrew-lin-466798328/"><img src="https://img.shields.io/badge/LinkedIn-Andrew_Lin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:alin257274@gmail.com"><img src="https://img.shields.io/badge/Email-alin257274@gmail.com-113560?style=for-the-badge" alt="Email"></a>
+</p>
+
+<p align="center">
+  <b>🚗 My portfolio has an Explore Mode — drive a probe around a blueprint of my work: <a href="https://fangedan.github.io">fangedan.github.io</a></b>
+</p>
+
 ---
 
 ## 🔹 About Me  
@@ -49,6 +59,8 @@
 
 ### 🛠 **Notable Projects**
 
+🔹 **[🗺️ Blueprint Portfolio](https://fangedan.github.io)** – This profile, but **drivable**: a zero-dependency interactive portfolio with a canvas-based Explore Mode, custom drift physics, and an animated percolation background — [source on GitHub](https://github.com/Fangedan/Fangedan.github.io)
+
 🔹 **[GAN-PH — SOC Electrode Microstructure Generation](https://github.com/Fangedan/GAN-PH)** – Conditional Wasserstein GAN pipeline for generating 3D porous electrode microstructures, with persistent homology validation and an [interactive simulation](https://fangedan.github.io/GAN-PH)
 
 🔹 **[CS314 Recursion](https://github.com/Fangedan/CS314-Recursion)** – **Recursive problem-solving** in Java, tackling complex algorithmic challenges  
@@ -69,5 +81,5 @@
 
 ## 📫 Let's Connect!  
 - 📧 **Email**: alin257274@gmail.com  
-- 🌍 **Portfolio (Coming Soon!)**  
+- 🌍 **Portfolio**: **[fangedan.github.io](https://fangedan.github.io)** ← drive around it
 - 💼 **[LinkedIn](https://www.linkedin.com/in/andrew-lin-466798328/)**
