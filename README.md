@@ -27,14 +27,14 @@
 
 ### 🔬 **Research & Internships**
 
-- **UTD Machine Learning Research Internship — Prof. Xinfang Jin (2025)**
+- **UTD Machine Learning Research Internship — Prof. Xinfang Jin (2026)**
   - Built a **Python preprocessing pipeline** (`preprocess_dream3d.py`) to convert DREAM.3D PNG exports into 64×64×64 BMP voxel stacks with measured volume fractions, specific surface areas, and label files — replacing an existing MATLAB workflow
   - Extended the preprocessor with production-ready flags: `--multi` (batch-processes multiple DREAM.3D stacks sequentially), `--tile-xy` (spatially tiles large 500×500×500+ volumes into ~49 structures per z-slab instead of downsampling), `--dry-run`, and `--preview`; switched downsampling to block-center sampling to keep categorical phase labels exact
-  - Diagnosed two bugs causing **pore-phase collapse** in the WGAN-GP (a severed SSA-loss gradient path and a volume-fraction loss computed on softmax instead of argmax), then designed and added a **differentiable connectivity loss** (3D-convolution isolation penalty + face-hinge percolation term) — raising pore-connectivity and active-TPB similarity scores from **FAIL to OK** (0.48→0.90 and 0.59→0.86)
+  - **Validated the full pipeline end-to-end on 101 real DREAM.3D microstructures** (first real-data run): generated structures reproduced the real material's **Ni connectivity (S=0.905) and pore connectivity (S=0.872)** in the OK band on the Yu et al. similarity scale — and Ni connectivity was reproduced *without ever being a training target*
+  - Diagnosed two bugs causing **pore-phase collapse** in the WGAN-GP (a severed SSA-loss gradient path and a volume-fraction loss computed on softmax instead of argmax), then designed and added a **differentiable connectivity loss** (3D-convolution isolation penalty + face-hinge percolation term) — fixing pore collapse on synthetic data (similarity **0.48→0.90** and **0.59→0.86**, FAIL→OK); a controlled real-data **ablation** then showed the term overshoots where a phase already percolates, isolating *when* a connectivity loss helps versus hurts
   - Built **`4_CNNCT`**, a new analysis module measuring phase percolation, active triple-phase-boundary density, tortuosity (`taufactor`), and Yu et al. distribution-similarity S-values, with a 23-test suite
   - Automated a manual ParaView workflow with **`0_PRV/paraview_slice_export.py`** (`pvpython`), converting DREAM.3D `.vtk` volumes into slice-image stacks — shipped with a ground-truth test harness that caught four silent label-corrupting bugs before handoff
   - Wrote a standalone test suite (`test_preprocess.py`) covering four end-to-end scenarios — resize mode, tile-XY mode, multi-folder mode, and pixel-level phase round-trip — all passing on Windows
-  - Successfully ran the full ML pipeline: CNN surface-area estimator → connectivity-aware WGAN-GP → persistent-homology topological validation → connectivity/TPB transport validation
   - Built an [interactive 3D SOC electrode simulation](https://fangedan.github.io/GAN-PH) visualizing the electrochemical process with directional particle flows, deployed via GitHub Pages
   - 🔗 **[GAN-PH Repository](https://github.com/Fangedan/GAN-PH)**
 
@@ -61,7 +61,7 @@
 
 🔹 **[🗺️ Blueprint Portfolio](https://fangedan.github.io)** – This profile, but **drivable**: a zero-dependency interactive portfolio with a canvas-based Explore Mode, custom drift physics, and an animated percolation background — [source on GitHub](https://github.com/Fangedan/Fangedan.github.io)
 
-🔹 **[GAN-PH — SOC Electrode Microstructure Generation](https://github.com/Fangedan/GAN-PH)** – Conditional Wasserstein GAN pipeline for generating 3D porous electrode microstructures, with persistent homology validation and an [interactive simulation](https://fangedan.github.io/GAN-PH)
+🔹 **[GAN-PH — SOC Electrode Microstructure Generation](https://github.com/Fangedan/GAN-PH)** – Conditional Wasserstein GAN pipeline for generating 3D porous electrode microstructures, validated on real DREAM.3D data with persistent homology and triple-phase-boundary transport analysis, plus an [interactive simulation](https://fangedan.github.io/GAN-PH)
 
 🔹 **[CS314 Recursion](https://github.com/Fangedan/CS314-Recursion)** – **Recursive problem-solving** in Java, tackling complex algorithmic challenges  
 
