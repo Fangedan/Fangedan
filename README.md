@@ -39,8 +39,10 @@
   - 🔗 **[GAN-PH Repository](https://github.com/Fangedan/GAN-PH)**
 
 - **[UTD Summer Research Internship Program](https://docs.google.com/presentation/d/1SvF_jI_fieUf8khbQ-3sPhu5if0kxnPZ9Vb_lg_QxB4/edit?usp=sharing) (2024)**
-  - Studied active speaker detection in **Dr. Yapeng Tien's Computer Vision Lab**  
+  - Studied active speaker detection in **Dr. Yapeng Tian's Computer Vision Lab**  
   - Optimized training techniques (**VGG16, transfer learning, weight freezing**) to maximize **mAP results**  
+  - Built a [live in-browser active speaker detection demo](https://fangedan.github.io/CVMC) — per-face lip tracking correlated with microphone energy, deployed via GitHub Pages
+  - 🔗 **[CVMC Repository](https://github.com/Fangedan/CVMC)**
 
 - **UTD CAST STEM Bridge Research Lab (2023)**
   - Researched **hybrid manufacturing & CAD modeling** under Dr. Wei Li  
@@ -65,7 +67,7 @@
 
 🔹 **[CS314 Recursion](https://github.com/Fangedan/CS314-Recursion)** – **Recursive problem-solving** in Java, tackling complex algorithmic challenges  
 
-🔹 **[Freetail Hackers Hackathon](https://github.com/Fangedan/CVMC)** – **CVMC** starter code to train ASD Models on datasets stored in the AVA Active Speaker format  
+🔹 **[CVMC — Active Speaker Detection](https://github.com/Fangedan/CVMC)** – Two-stream **audio-visual CNN** determining which visible face is speaking, trained on AVA Active Speaker format data — built during the UTD Computer Vision Lab internship and showcased through Freetail Hackers, with a [live in-browser demo](https://fangedan.github.io/CVMC)  
 
 🔹 **[Girlfriend's Website](https://github.com/Fangedan/silly)** – **Silly** website I made to ask my girlfriend to be my girlfriend  
 
